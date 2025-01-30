@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main (){
+
+float math = 0;
+float science = 0;
+float filipino = 0;
+float average = 0;
+
+printf("Enter Math: ");
+scanf("%f", &math);
+
+printf("Enter Science: ");
+scanf("%f", &science);
+
+printf("Enter Filipino: ");
+scanf("%f", &filipino);
+
+average = (math + science + filipino) / 3;
+printf("average: %f", average);
+
+printf("\n");
+
+if("average >=90 && average <94"){
+printf("Honors");
+}
+
+
+else if ("average >=95 && average <97"){
+printf("High Honors");
+}
+
+
+else if ("average >=98 && average <100"){
+printf("Highest Honors");
+}
+
+
+else{
+    printf("No Honors");
+}
+
+return 0;
+
+}
