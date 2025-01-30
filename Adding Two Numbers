@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main (){
+
+//DECLARE TWO VARIABLES
+int num1 = 0;
+int num2 = 0;
+int sum = 0;
+
+//ENTER THE TWO NUMBERS TO BE ADDED
+printf("Enter 1st Number: ");
+scanf("%d", &num1);
+printf("Enter 2nd Number: ");
+scanf("%d", &num2);
+
+//DISPLAY RESULT
+sum = num1 + num2;
+printf("%d + %d = %d", num1, num2, sum);
+
+return 0;
+
+}
