@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    
+    int num1 = 0, num2 = 0, oper = 0, total = 0;
+    
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+    
+    printf("1. Add\n2. Subtract\n3. Multiplication\n4. Division\n");
+    
+    
+    while(oper != 1 && oper != 2 && oper != 3 && oper != 4){
+        printf("Enter operation: ");
+        scanf("%d", &oper);
+    }
+    
+    if(oper == 1){
+        total = num1 + num2;
+        printf("%d", total);
+    }
+    else if(oper == 2){
+        total = num1 - num2;
+        printf("%d", total);
+    }
+    else if(oper == 3){
+        total = num1 * num2;
+        printf("%d", total);
+    }
+    else if(oper == 4){
+        total = num1 / num2;
+        printf("%d", total);
+    }
+    
+    
+
+    return 0;
+}
